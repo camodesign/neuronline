@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4082" height="215" viewBox="0 0 4082 215">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1174" data-name="Rectangle 1174" width="4082" height="215" transform="translate(-12593 149)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_1171" data-name="Rectangle 1171" width="4082" height="1930" transform="translate(0.201 -144.57)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="hero-waves" transform="translate(12593 -149)" clip-path="url(#clip-path)">
+    <g id="Mask_Group_8" data-name="Mask Group 8" transform="translate(-12593.201 -1421.43)" clip-path="url(#clip-path-2)">
+      <path id="Base" d="M0,0H4082.267l5.134,1680.1s-939.033,154.093-1959.6,154.093S0,1674.287,0,1674.287V0Z" transform="translate(0.068 -49.042)" fill="#69d4f3" opacity="0.5"/>
+      <path id="Base-2" data-name="Base" d="M0,0H4082.267l5.134,1680.1s-939.033,154.093-1959.6,154.093S0,1674.287,0,1674.287V0Z" transform="translate(0.068 -68.178)" fill="#69d4f3" opacity="0.5"/>
+      <path id="Base-3" data-name="Base" d="M0,0H4082.267V1734.963S3156.26,1862.7,2135.693,1862.7,0,1734.963,0,1734.963V0Z" transform="translate(0.068 -144.72)" fill="#69d4f3"/>
+    </g>
+  </g>
+</svg>

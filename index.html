@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Neuronline</title>
   <!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> -->
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script> -->
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/grid.css">
 </head>
 <body>
   <header>
@@ -30,13 +32,22 @@
     </nav>
   </header>
   <main class="hero"> 
-    <section class="hero-container">
-      <div class="hero-presentation">
-        <h1></h1>
-        <p></p>
-        <a href=""><button></button></a>
+    <section class="hero-container container-p row" >
+      <div class="hero-presentation col-6">
+        <h1>El bienestar de tu hijo determinará su futuro</h1>
+        <p>Su desarrollo integral es importante para nosotros. </p>
+        <a href=""><button>Agenda tu cita</button></a>
       </div>
+      <figure class="hero-image col-6">
+        <img src="images/hero-image.png" alt="">
+      </figure>
     </section>
+    <div class="hero-waves">
+     
+
+      <div class="hero-wave-container"></div>
+     
+    </div>
   </main>
 </body>
 </html>
