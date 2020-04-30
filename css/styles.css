@@ -18,7 +18,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2 {
+h1, h2, h4 {
   color: var(--purple-color);
   font-family: 'gilroyextrabold';
   
@@ -194,7 +194,7 @@ header .navbar {
 
 .benefits-background {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-color: #FFF8C7;
 }
 
@@ -210,7 +210,7 @@ header .navbar {
 
 .wave-benefits-bottom {
   max-width: 100%;
-  height: 410px;
+  height: 542px;
   background-image: url('/images/wave-benefits-2.svg');
   background-position: top center;
   background-size: cover;
@@ -230,14 +230,83 @@ header .navbar {
 }
 
 .card {
-  width: 320px;
+  width: 300px;
   background-color: var(--white-color);
-  padding: 1.5em;
+  padding: 1.8em;
   border-radius: 25px;
   margin: .5em;
   height: min-content;
 }
 
+.card h4 {
+  margin: 1em 0 1em;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color:#686868;
+  line-height: 22.4px;
+
+}
+
 .card:nth-of-type(2), .card:nth-of-type(4) {
   margin-top: -4em;
 }
+
+.step-content {
+  width: 100%;
+  position: relative;
+  /* background-image: url('../images/line-step.svg'); */
+}
+.step-content h2 { 
+  font-size: 48px;
+ 
+
+  text-align: center;
+}
+
+.step-content span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: var(--text-color);
+  margin-top: 2em;
+}
+
+/* .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(300px,1fr));
+  grid-template-rows: repeat(2, 250px);
+  justify-items: center;
+  align-items: center;
+
+}
+
+.step-schedule {
+  grid-row: 2;
+}
+
+.step-pay {
+  grid-column: 2;
+}
+
+.step-service {
+  grid-column: 3;
+  grid-row: 2;
+} */
+
+/* svg tspan{
+  color: var(--purple-color);
+  font-family: 'gilroyextrabold';
+  
+  font-weight: 300;
+   
+} */
+
+.step-content img {
+  width: 100%;
+  margin-top: 6em;
+}
+
+
