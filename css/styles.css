@@ -18,7 +18,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h4 {
+h1, h2, h4, h5 {
   color: var(--purple-color);
   font-family: 'gilroyextrabold';
   
@@ -257,12 +257,11 @@ header .navbar {
 .step-content {
   width: 100%;
   position: relative;
+  margin-bottom: 10em;
   /* background-image: url('../images/line-step.svg'); */
 }
 .step-content h2 { 
   font-size: 48px;
- 
-
   text-align: center;
 }
 
@@ -308,5 +307,79 @@ header .navbar {
   width: 100%;
   margin-top: 6em;
 }
+
+.therapy-services {
+  width: 100%;
+  /* height: 300px; */
+  position: relative;
+  
+}
+
+.therapy-services h2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.therapy-services span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: var(--text-color);
+  margin: 3em 0;
+}
+
+.wave-service-top {
+  position: absolute;
+  width: 100%;
+  height: min-content;
+  bottom: calc(100% - 2px);
+}
+.wave-service-bottom {
+  position: absolute;
+  width: 100%;
+  height: min-content;
+  /* bottom: -100px; */
+}
+
+.therapy-services-content {
+  width: 100%;
+  background-color: #fedaeb;
+ 
+
+}
+
+.grid-services {
+  max-width: 1366px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(444px, 4fr));
+  justify-items: center;
+  gap: 1em;
+  position: relative;
+  z-index: 1;
+  bottom: -168px;
+}
+
+.service-item  {
+  width: 100%;
+  height: 166px;
+  border-radius: 25px;
+  background-color: var(--white-color);
+  -webkit-box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  padding: 2em;
+}
+
+.service-item img {
+  margin-right: 1em;
+}
+
+.service-item h5{
+  font-size: 16px;
+}
+
 
 
