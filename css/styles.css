@@ -58,6 +58,9 @@ header .navbar {
 .hero {
   width: 100%;
   height: 800px;
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .hero-presentation {
@@ -137,17 +140,22 @@ header .navbar {
   margin-top: 36px;
 }
 
+.profesional-section {
+  position: relative;
+  margin: 8em 0;
+}
 
 .profesional-container {
   align-items: center;
   justify-content: space-between;
 }
 
-.profesional-image img {
+.profesional-image img:nth-of-type(1) {
   max-width: 100%;
   margin-right: 2em;
 }
 .profesional-image {
+  position: relative;
   margin-right: 2em;
 }
 
@@ -165,5 +173,71 @@ header .navbar {
   font-size: 18px;
   color: var(--text-color);
   line-height: 32px;
-  fon
+  
+}
+
+.back-therapy {
+  position: absolute;
+  max-width: 1200px;
+  top: 90px;
+  left: -556px;
+  z-index: -1;
+}
+.back-therapy img {
+  width: 100%;
+}
+
+
+.benefits-container {
+  align-items: baseline;
+}
+
+.benefits-background {
+  width: 100%;
+  height: 400px;
+  background-color: #FFF8C7;
+}
+
+.wave-benefits-top  {
+  width: 100%;
+  height: 200px;
+  background-image: url('/images/wave-benefits-1.svg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0;
+}
+
+.wave-benefits-bottom {
+  max-width: 100%;
+  height: 410px;
+  background-image: url('/images/wave-benefits-2.svg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.tittle-benefits h2 {
+  font-size: 48px;
+}
+
+.cards-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.card {
+  width: 320px;
+  background-color: var(--white-color);
+  padding: 1.5em;
+  border-radius: 25px;
+  margin: .5em;
+  height: min-content;
+}
+
+.card:nth-of-type(2), .card:nth-of-type(4) {
+  margin-top: -4em;
 }

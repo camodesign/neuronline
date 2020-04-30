@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="102" viewBox="0 0 102 102">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="102" height="102" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Avatar" transform="translate(-0.476 0.088)">
+    <g id="icon-provicional" transform="translate(0.476 -0.088)" clip-path="url(#clip-path)">
+      <g id="icon-provicional-2" data-name="icon-provicional" transform="translate(-0.476 0.088)">
+        <circle id="Ellipse_40" data-name="Ellipse 40" cx="51" cy="51" r="51" transform="translate(0.476 -0.088)" fill="#bce0fd"/>
+        <path id="Union_12" data-name="Union 12" d="M0,34V29.75c0-4.675,7.65-8.5,17-8.5s17,3.825,17,8.5V34ZM8.5,8.5A8.5,8.5,0,1,1,17,17,8.5,8.5,0,0,1,8.5,8.5Z" transform="translate(34.476 33.912)" fill="#2699fb"/>
+      </g>
+    </g>
+  </g>
+</svg>
