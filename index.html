@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Neuronline</title>
   <!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
   <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> -->
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="fonts/stylesheet.css">
+  <script src="js/main.js" type="text/javascript"></script>
   <!-- Principio del widget de enlace de Calendly -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
@@ -22,16 +25,16 @@
     
     <nav id="navbar_1" class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm bg-white">
 
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="#"><img src="images/logo-neruonline.svg" alt=""></a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="main_nav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a href="#section_1" class="scrollto nav-link active"> Section 1 </a></li>
-        <li class="nav-item"><a href="#section_2" class="scrollto nav-link"> Section 2 </a></li>
-        <li class="nav-item"><a href="#section_3" class="scrollto nav-link"> Section 3 </a></li>
-        <li class="nav-item"><a href="#section_4" class="scrollto nav-link"> Section 4 </a></li>
+        <li class="nav-item"><a href="#benefits" class="scrollto nav-link active"> Beneficios </a></li>
+        <li class="nav-item"><a href="#services" class="scrollto nav-link"> Servicios </a></li>
+        <li class="nav-item"><a href="#plans" class="scrollto nav-link"> Agenda tu cita </a></li>
+        <!-- <li class="nav-item"><a href="#section_4" class="scrollto nav-link"> Section 4 </a></li> -->
       </ul>
     
       </div> <!-- navbar-collapse.// -->
@@ -71,7 +74,7 @@
       </div>
     </div>
   </section>
-  <section class="benefits">
+  <section class="benefits" id="benefits">
     <div class="wave-benefits-top"></div>
     <div class="benefits-background">
       <article class="benefits-container container-p row">
@@ -141,7 +144,7 @@
     </article> -->
     <img src="images/step-process.svg" alt="">
   </section>
-  <section class="therapy-services">
+  <section class="therapy-services" id="services">
     <svg class="wave-service-top" xmlns="http://www.w3.org/2000/svg" width="1919" height="145.423" viewBox="0 0 1919 145.423"><g transform="translate(7212.5 -8122.077)"><path d="M1919,145.424h-.173l-.016-.852,0-.226a28.364,28.364,0,0,0-4.576-4.266,117.074,117.074,0,0,0-18.188-11.463,314.87,314.87,0,0,0-38.492-16.659c-18.764-6.855-40.8-13.534-65.491-19.852-62.878-16.088-143.2-29.975-238.743-41.278-56.724-6.71-119.518-12.572-186.639-17.421-73.827-5.334-154.711-9.576-240.405-12.607-156.6,2.723-445.706,26.964-700.782,48.351h-.013l-.078.007-.026,0-.038,0-.024,0-.087.007h-.006l-.023,0-.062.005-.272.023C336,76.653,252.073,83.691,178.98,89.38,97.031,95.759,40.427,99.527.844,101.238L.01,145.423H0V88.352c35.871-.7,78.985-3.646,135.684-9.26C191.155,73.6,254.352,66.043,321.26,58.042l.047-.006.044-.005.043-.005.1-.012.19-.023.01,0,.022,0,.05-.006C428.716,45.191,549.939,30.695,681.473,19.4,833.441,6.345,971.377,0,1103.164,0c57.892,0,116.738,1.279,174.905,3.8,52.936,2.3,106.5,5.668,159.206,10.024,88.793,7.337,176.916,17.571,261.921,30.417,33.373,5.044,66.35,10.51,98.015,16.247,25.353,4.593,49.886,9.361,72.919,14.171,22.111,4.617,38.78,8.439,48.87,10.831v59.93Z" transform="translate(-7212.5 8122.077)" fill="#fedaeb" opacity="0.5"/><path d="M1942.314,152.962H23.479l.844-44.686c39.543-1.709,96.147-5.477,178.135-11.859C275.55,90.728,359.65,83.677,448.687,76.211h.011c255.177-21.4,544.4-45.649,701.055-48.374,85.7,3.031,166.579,7.273,240.4,12.607,67.115,4.85,129.909,10.711,186.637,17.421,95.543,11.3,175.868,25.189,238.744,41.277,24.7,6.32,46.735,13,65.491,19.852a314.612,314.612,0,0,1,38.493,16.659,116.974,116.974,0,0,1,18.188,11.463,28.857,28.857,0,0,1,4.576,4.266l.028,1.579Z" transform="translate(-7235.979 8114.038)" fill="#fedaeb"/></g></svg>
     <div class="therapy-services-content">
       <h2>Conoce nuestros servicios</h2>
@@ -178,10 +181,10 @@
     <h2>Asesoría y consultoría</h2>
     <p>Enfocada en las posibles alteraciones que los niños y niñas puedan presentar en su desarrollo y/o dificultades del aprendizaje.</p>
   </section>
-  <section class="plans-options">
+  <section class="plans-options" id="plans">
     <h2>Agenda tu cita ahora</h2>
     <article class="plans-options-container">
-      <div class="plan-domiciliary">
+      <div class="plan-domiciliary plan-item">
         <h3>Cita a Domicilio</h3>
         <img src="images/illustration-docmiciliary.svg" alt="">
         <ul>
@@ -193,8 +196,8 @@
         </ul>
         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/camodesing/30min'});return false;"><button>Agenda tu cita</button></a>
       </div>
-      <div class="plan-domiciliary">
-        <h3>Cita a Domicilio</h3>
+      <div class="plan-online plan-item">
+        <h3>Cita Online</h3>
         <img src="images/illustration-docmiciliary.svg" alt="">
         <ul>
           <li>Sesión de 40min</li>
