@@ -11,9 +11,15 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="fonts/stylesheet.css">
+  <!-- Principio del widget de enlace de Calendly -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+
+<!-- Final del widget de enlace de Calendly -->
 </head>
 <body>
   <header>
+    
     <nav id="navbar_1" class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm bg-white">
 
       <a class="navbar-brand" href="#">Brand</a>
@@ -30,7 +36,7 @@
     
       </div> <!-- navbar-collapse.// -->
     
-    </nav>
+    </nav> 
   </header>
   <main class="hero"> 
     <section class="hero-container container-p row" >
@@ -167,7 +173,63 @@
       </div>
     </div>
     <svg class="wave-service-bottom" xmlns="http://www.w3.org/2000/svg" width="1920" height="121.404" viewBox="0 0 1920 121.404"><path d="M1020.158,573.4c-57.233,0-118.348-1.336-181.647-3.97-57.554-2.4-118.2-5.918-180.252-10.468C553.738,551.3,443.323,540.615,330.079,527.2c-44.484-5.269-89.52-10.976-133.857-16.965-35.478-4.792-70.577-9.771-104.322-14.8C35.044,486.966,1.4,481.239,0,481V452H1920v29l-.037.009c-2.818.615-28.81,6.248-73.063,14.429-27.2,5.029-55.82,10.008-85.053,14.8-36.541,5.989-74.145,11.7-111.768,16.965-95.779,13.413-192.279,24.1-286.821,31.764-56.128,4.55-112.188,8.072-166.623,10.468C1136.767,572.068,1077.391,573.4,1020.158,573.4Z" transform="translate(0 -452)" fill="#fedaeb"/></svg>
-
   </section>
+  <section class="consulting-service container-p row ">
+    <h2>Asesoría y consultoría</h2>
+    <p>Enfocada en las posibles alteraciones que los niños y niñas puedan presentar en su desarrollo y/o dificultades del aprendizaje.</p>
+  </section>
+  <section class="plans-options">
+    <h2>Agenda tu cita ahora</h2>
+    <article class="plans-options-container">
+      <div class="plan-domiciliary">
+        <h3>Cita a Domicilio</h3>
+        <img src="images/illustration-docmiciliary.svg" alt="">
+        <ul>
+          <li>Sesión de 40min</li>
+          <li>Zona de cobertura</li>
+          <li>Norte de Bogotá</li>
+          <li>Sabana Centro:</li>
+          <li>Chía, Cajicá, Zipaquirá, Sopo, Tabio</li>
+        </ul>
+        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/camodesing/30min'});return false;"><button>Agenda tu cita</button></a>
+      </div>
+      <div class="plan-domiciliary">
+        <h3>Cita a Domicilio</h3>
+        <img src="images/illustration-docmiciliary.svg" alt="">
+        <ul>
+          <li>Sesión de 40min</li>
+          <li>Zona de cobertura</li>
+          <li>Norte de Bogotá</li>
+          <li>Sabana Centro:</li>
+          <li>Chía, Cajicá, Zipaquirá, Sopo, Tabio</li>
+        </ul>
+        <a href=""><button>Agenda tu cita</button></a>
+      </div>
+    </article>
+  </section>
+  <footer>
+    <svg class="wave-footer" xmlns="http://www.w3.org/2000/svg" width="1921.002" height="151.671" viewBox="0 0 1921.002 151.671"><g transform="translate(7059.502 -8943.83)"><path d="M46.5,119.721v0h0V65.859c90.6-13.386,154.038-22.058,212.107-29,65.588-7.838,125.786-13.57,189.448-18.038,64.111-4.5,134.431-7.906,221.3-10.724,78.022-2.53,172.909-4.707,307.662-7.059C1016.623.35,1057,0,1097.016,0c74.451,0,150.789,1.2,226.9,3.581,69.153,2.16,139.65,5.337,209.533,9.441,117.695,6.913,235.818,16.551,351.088,28.648,27.632,2.9,55.378,5.975,82.467,9.136V87.187c-63.2-7.27-107.135-12.184-146.919-16.432-68.224-7.287-123.7-12.49-174.573-16.374-109.248-8.343-211.925-11.747-354.4-11.747-83.129,0-182.207,1.11-331.292,3.713-44.455.775-89.878,2.017-135.006,3.69-43.036,1.6-86.941,3.625-130.5,6.03C613.786,60.515,531.5,66.413,449.736,73.6,314.451,85.49,178.783,101.007,46.5,119.721Z" transform="translate(-7106 8943.83)" fill="#6352ff" opacity="0.5"/><path d="M0,94.177l0,0H0V45.268c59.087-7.829,109.915-13.707,159.962-18.5,26.381-2.526,52.27-4.726,79.147-6.726,26.971-2.009,54.406-3.775,83.871-5.4C380.13,11.5,442.97,9,520.743,6.775c69.872-2,151.353-3.766,264.2-5.736C824.491.35,864.865,0,904.942,0c74.492,0,150.831,1.205,226.9,3.582,69.2,2.161,139.693,5.338,209.533,9.441,38.054,2.235,76.672,4.79,114.781,7.594-62.431-2.406-129.651-3.528-211.545-3.528-83.081,0-182.159,1.11-331.293,3.712-44.413.776-89.837,2.018-135.007,3.691-43.054,1.6-86.96,3.625-130.5,6.03-80.567,4.45-162.853,10.348-244.573,17.531C267.963,59.944,132.295,75.462,0,94.176Z" transform="translate(-7059.5 8969.375)" fill="#6352ff" opacity="0.5"/><path d="M1954.5,109.036H33.5V77.086C165.816,58.369,301.484,42.851,436.737,30.964,518.481,23.78,600.767,17.882,681.31,13.433,724.847,11.027,768.753,9,811.806,7.4c45.116-1.673,90.539-2.914,135.006-3.69C1095.9,1.11,1194.983,0,1278.1,0c142.468,0,245.146,3.4,354.4,11.747,50.875,3.884,106.347,9.086,174.573,16.374,39.848,4.255,83.936,9.186,147.419,16.49v64.425Z" transform="translate(-7093 8986.465)" fill="#6352ff"/></g></svg>
+    <div class="footer-container container-p row">
+
+      <div class="logo-social-link">
+        <a href="" class="logo-neruonline-white"><img src="images/logo-neruonline-white.svg" alt=""></a>
+  
+        <ul>
+          <li><a href=""><img src="images/facebook-icon.svg" alt=""></a></li>
+          <li><a href=""><img src="images/instagram-icon.svg" alt=""></a></li>
+          <li><a href=""><img src="images/twitter-icon.svg" alt=""></a></li>
+          <li><a href=""><img src="images/youtube-icon.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="contact-dates">
+        <h3>Atención al cliente</h3>
+        <ul>
+          <li><a href="">info@ceentir.com</a></li>
+          <li><a href="">3016879070</a></li>
+          <li><a href="">3229457056</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
