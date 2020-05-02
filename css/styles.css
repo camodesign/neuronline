@@ -109,9 +109,8 @@ header {
 .hero {
   width: 100%;
   height: 800px;
-  /* overflow: scroll;
-  overflow-y: hidden;
-  overflow-x: hidden; */
+  overflow: hidden;
+ 
 }
 
 
@@ -309,6 +308,7 @@ header {
   position: relative;
   margin-bottom: 10em;
   /* background-image: url('../images/line-step.svg'); */
+  overflow: hidden;
 }
 .step-content h2 { 
   font-size: 48px;
@@ -412,7 +412,7 @@ header {
   max-width: 1366px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 4fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 4fr));
   justify-items: center;
   gap: 1em;
   position: relative;
@@ -537,12 +537,14 @@ footer {
 
 .footer-content {
   width: 100%;
-  height: 190px;
+  height: auto;
   background-color: var(--purple-color);
+  padding: 2em 0;
 }
 .footer-container{
 
   justify-content: space-between;
+  align-items: center;
 }
 
 .wave-footer {
@@ -596,11 +598,18 @@ footer {
 
 /* 480 - 320 */
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1194px ) {
 
   header, .hero, .benefits-container, .profesional-section, .footer-container, .consulting-service {
     padding: 0 1em;
   }
+}
+
+@media screen and (max-width: 1023px){
+  header, .hero, .benefits-container, .profesional-section, .footer-container, .consulting-service {
+    padding: 0 1em;
+  }
+
 
   .hero-waves {
     height: 80%;
@@ -647,6 +656,11 @@ footer {
 
   .hero {
     margin-bottom: 20em;
+    overflow: initial;
+  }
+
+  .hero-waves {
+    height: 128%;
   }
   .hero-presentation {
     text-align: center;
@@ -658,12 +672,34 @@ footer {
     position: initial;
   }
 
+  .profesional-section {
+    margin-top: 28em;
+  }
 
+  .profesional-image.col-6 img {
+    margin-right: 0;
+
+  }
+
+  .profesional-description {
+    padding: 0 7em;
+    margin-top: 4em;
+  }
+
+  .tittle-benefits {
+    margin-bottom: 4em;
+  }
+
+  .cards-item.col-8 {
+    width: 100%;
+    justify-content: center;
+  }
 
   .card:nth-of-type(2), .card:nth-of-type(4) {
     margin: .5em;
     height: auto;
   }
+  
 
   .tittle-benefits {
     padding: 0 1em;
@@ -688,14 +724,175 @@ footer {
 .consulting-service h2 {
   margin-bottom: 1em;
 }
+.consulting-service p {
+  padding: 0 6em;
+}
+
+.plan-domiciliary {
+  margin-right: 2em;
+}
+
+.wave-footer {
+  height: 142px;
+}
+.footer-container.row {
+  display: flex;
+}
+
+
 }
 @media screen and (max-width: 767px){
+
+  .navbar-toggler {
+    display: initial;
+  }
+
+  #main_nav {
+    display: none;
+  }
+
+  .therapy-services {
+    margin-bottom: 16em;}
+
+  .therapy-services-content {
+    height: 964px;}
+
+  .service-item {
+    width: 70%;
+  }
+
+  .plan-domiciliary {
+    margin-right: 0;
+  }
+
+  .plans-options {
+    margin-top: 16em;
 
 }
 @media screen and (max-width: 480px){
 
+  .profesional-description h2 {
+    font-size: 34px;
+}
+
+.profesional-description p {
+  font-size: 16px;
+}
+
+  .hero {
+    margin-bottom: 8em;
+}
+
+  .hero-presentation h1 {
+    font-size: 40px;
+}
+
+.hero-presentation {
+
+  padding: 0 1em;
+}
+
+.hero-image {
+  margin-top: 4em;
+}
+
+.hero-waves {
+  height: 102%;
+}
+  .profesional-section {
+    margin-top: 0;
+  }
+
+  .profesional-description {
+    padding: 0px 1em;
+    margin-top: 10em;
+  }
+
+  .benefits-background {
+    height: 1302px;
+  }
+
+  .tittle-benefits h2 {
+    font-size: 34px;
+}
+
+.grid-services {
+  padding: 0;
+}
+
+.step-content h2 {
+  font-size: 34px;
+}
+
+.therapy-services h2 {
+  font-size: 34px;
+}
+
+  .service-item {
+    width: 100%;
+}
+
+.therapy-services-content {
+  height: 1064px;
+}
+
+.consulting-service h2 {
+  font-size: 34px;
+}
+
+.consulting-service p {
+  font-size: 16px;
+  padding: 0 1em; }
+
+  .plans-options h2 {
+    font-size: 34px;
+}
+
+.plans-options-container{
+  padding: 0 .5em;
+}
+
+.plan-item {
+  width: 83%;
+  height: auto;  
+}
+
+.plan-item h3 {
+  font-size: 18px;
+}
+
+.plan-item img {
+  width: 50%;
+}
+
+.plan-item ul li {
+  font-size: .6em;
+}
+
+.plan-item button {
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.footer-container {
+  flex-direction: column;
+}
+
+.logo-social-link {
+
+    margin-bottom: 4em;
+}
+
+.contact-dates ul li {
+  text-align: center;
+}
+
 }
 @media screen and (max-width: 320px){
+
+  .grid-services {
+    padding: 0;
+}
 
 }
 
