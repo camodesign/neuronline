@@ -109,9 +109,9 @@ header {
 .hero {
   width: 100%;
   height: 800px;
-  overflow: scroll;
+  /* overflow: scroll;
   overflow-y: hidden;
-  overflow-x: hidden;
+  overflow-x: hidden; */
 }
 
 
@@ -597,7 +597,97 @@ footer {
 /* 480 - 320 */
 
 @media screen and (max-width: 1023px){
-  
+
+  header, .hero, .benefits-container, .profesional-section, .footer-container, .consulting-service {
+    padding: 0 1em;
+  }
+
+  .hero-waves {
+    height: 80%;
+  }
+
+  .hero-presentation h1 {
+    font-size: 46px;
+    
+  }
+
+  .hero-presentation p {
+    font-size: 22px;
+  }
+
+  .profesional-section {
+    margin: 0 0 12em;
+  }
+
+  .profesional-description h2 {
+    font-size: 42px;
+  }
+
+  .tittle-benefits h2 {
+    font-size: 42px;
+  }
+  .step-content img {
+    position: inherit;
+    left: -10%;
+    width: 121%;
+  }
+
+  .grid-services {
+    padding: 0 4em;
+  }
+}
+@media screen and (max-width: 975px){
+
+  .cards-item.col-8{
+    width: 68%;
+  }
+
+}
+@media screen and (max-width: 900px){
+
+  .hero {
+    margin-bottom: 20em;
+  }
+  .hero-presentation {
+    text-align: center;
+    margin-top: 5em;
+    padding: 0 4em;
+  }
+
+  .hero-image img {
+    position: initial;
+  }
+
+
+
+  .card:nth-of-type(2), .card:nth-of-type(4) {
+    margin: .5em;
+    height: auto;
+  }
+
+  .tittle-benefits {
+    padding: 0 1em;
+    text-align: center;
+  }
+.benefits-background {
+  height: 690px;
+}
+
+.therapy-services {
+  margin-bottom: 8em;
+}
+
+.therapy-services-content {
+  height: 610px;
+}
+
+.consulting-service  {
+  text-align: center;
+}
+
+.consulting-service h2 {
+  margin-bottom: 1em;
+}
 }
 @media screen and (max-width: 767px){
 
