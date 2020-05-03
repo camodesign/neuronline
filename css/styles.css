@@ -884,19 +884,12 @@ footer {
 }
 
 .contact-dates ul li {
-  text-align: center;
+  text-align: center; 
+  }
 }
+@media screen and (max-width: 320px) {
 
+    .grid-services {
+      padding: 0;
+  } 
 }
-@media screen and (max-width: 320px){
-
-  .grid-services {
-    padding: 0;
-}
-
-}
-
-
-
-
-
