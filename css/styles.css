@@ -57,7 +57,7 @@ header {
   margin-top: 1em;
 }
 
-#main_nav{
+.navbar-collapse {
   display: initial;
 }
 
@@ -747,15 +747,49 @@ footer {
     display: initial;
   }
 
-  #main_nav {
+  .navbar-collapse {
     display: none;
+    position: absolute;
+    width: 100%;
+    top: 106px;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 14%;
+   
   }
 
+  .navbar-nav {
+    position: absolute;
+    background-color: var(--white-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* transform-origin: center; */
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: .3s;
+  }
+
+  .navbar-nav.is-active{
+    opacity: 1;
+    transform: translateY(0);
+    
+  }
+  
   .therapy-services {
-    margin-bottom: 16em;}
+    margin-bottom: 16em;
+  }
 
   .therapy-services-content {
-    height: 964px;}
+    height: 964px;
+  }
 
   .service-item {
     width: 70%;
@@ -842,7 +876,8 @@ footer {
 
 .consulting-service p {
   font-size: 16px;
-  padding: 0 1em; }
+  padding: 0 1em;
+ }
 
   .plans-options h2 {
     font-size: 34px;
@@ -892,4 +927,6 @@ footer {
     .grid-services {
       padding: 0;
   } 
+}
+
 }

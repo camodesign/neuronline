@@ -30,11 +30,11 @@ crossorigin="anonymous"></script>
     <nav id="navbar_1" class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm bg-white">
 
       <a class="navbar-brand" href="#"><img src="images/logo-neruonline.svg" alt=""></a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+       <button class="navbar-toggler" type="button" id="burger-menu" data-toggle="collapse" data-target="#main_nav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="main_nav">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav">
         <li class="nav-item"><a href="#benefits" class="scrollto nav-link active"> Beneficios </a></li>
         <li class="nav-item"><a href="#services" class="scrollto nav-link"> Servicios </a></li>
         <li class="nav-item"><a href="#plans" class="scrollto nav-link"> Agenda tu cita </a></li>
@@ -240,5 +240,40 @@ crossorigin="anonymous"></script>
       </div>
     </div>
   </footer>
+  
+     <script>
+           const ipad = window.matchMedia('screen and (max-width: 767px)');
+            const menu = document.querySelector('.navbar-nav');
+            // console.log(menu);
+            const burgerbutton = document.querySelector('#burger-menu');
+            // console.log(burgerbutton);
+
+
+            ipad.addListener(validation)
+
+            function validation (event) {
+                if (event.matches) {
+
+                     burgerbutton.addEventListener('click', hideShow)
+                }
+
+                else{
+                     burgerbutton.removeEventListener('click', hideShow)
+
+                }
+            }
+            validation(ipad);
+            
+            function hideShow() {
+             if (menu.classList.contains('is-active')) {
+                 menu.classList.remove('is-active');
+             }
+             else {
+
+            menu.classList.add('is-active');
+             }
+            }
+        </script>
+ 
 </body>
 </html>
