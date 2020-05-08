@@ -88,7 +88,7 @@ header {
 
 }
 .navbar-nav li {
-  margin-left: 1em;
+  margin-left: 4em;
 }
 .navbar-nav li:nth-of-type(3) a {
   color: var(--white-color);
@@ -186,6 +186,8 @@ header {
   font-size: 21px;
   background-color: var(--buttom-color);
   margin-top: 36px;
+  cursor: pointer;
+  outline: none;
 }
 
 .profesional-section {
@@ -287,6 +289,11 @@ header {
   height: min-content;
 }
 
+.card img {
+   width: 60px;
+   height: 60px;
+}
+
 .card h4 {
   margin: 1em 0 1em;
   font-size: 18px;
@@ -299,7 +306,11 @@ header {
 
 }
 
-.card:nth-of-type(2), .card:nth-of-type(4) {
+.card:nth-of-type(2) {
+  margin-top: -4em;
+}
+
+.card:nth-of-type(4) {
   margin-top: -4em;
 }
 
@@ -422,7 +433,7 @@ header {
 
 .service-item  {
   width: 100%;
-  height: 166px;
+  height: 150px;
   border-radius: 25px;
   background-color: var(--white-color);
   -webkit-box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.3);
@@ -438,7 +449,7 @@ header {
 }
 
 .service-item h5{
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .consulting-service {
@@ -522,7 +533,9 @@ header {
   font-weight: 700;
   font-size: 21px;
   background-color: var(--buttom-color);
-  margin-top: 1em
+  margin-top: 1em;
+  cursor: pointer;
+  outline: none;
 }
 
 .plan-domiciliary {
@@ -591,6 +604,17 @@ footer {
   text-align: right;
 }
 
+.copyright {
+  width: 100%;
+  background-color: var(--buttom-color);
+  padding: 1em 0;
+}
+
+.copyright p {
+  text-align: center;
+  color: var(--white-color);
+}
+
 
 /*///////// media queries//////// */
 
@@ -643,12 +667,32 @@ footer {
 
   .grid-services {
     padding: 0 4em;
-  }
+  
+  
+}
+@media screen and (max-width: 997px){
+
+  .cards-item.col-8{
+    width: auto;
+  } 
 }
 @media screen and (max-width: 975px){
 
   .cards-item.col-8{
-    width: 68%;
+    width: 84%;
+  }
+}
+@media screen and (max-width: 964px){
+
+  .cards-item.col-8{
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 915px){
+
+  .cards-item .card{
+    width: 47%;
   }
 
 }
@@ -693,6 +737,9 @@ footer {
   .cards-item.col-8 {
     width: 100%;
     justify-content: center;
+  }
+  .cards-item .card {
+    width: 300px;
   }
 
   .card:nth-of-type(2), .card:nth-of-type(4) {
@@ -803,6 +850,16 @@ footer {
     margin-top: 16em;
 
 }
+
+@media screen and (max-width: 648px) {
+  .benefits-background {
+    height: auto;
+  }
+
+
+}
+
+
 @media screen and (max-width: 480px){
 
   .profesional-description h2 {
@@ -922,7 +979,7 @@ footer {
   text-align: center; 
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {  
 
     .grid-services {
       padding: 0;
